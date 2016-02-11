@@ -10,7 +10,7 @@ class ViewStgJson extends ViewStg
     public function display()
     {
 
-        echo json_encode($this->data);
+        echo json_encode(array("records" => $this->data));
     }
 
 }
