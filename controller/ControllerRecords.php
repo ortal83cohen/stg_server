@@ -11,11 +11,11 @@ class ControllerRecords extends Controller
     private $lan;
     private $lang;
 
-    public function setRequestParameters($lat, $lan, $lang)
+    public function setRequestParameters($context, $language, $customerCountryCode,$orderBy,$type,$limit,$order,$currency)
     {
-        $this->lat = $lat;
-        $this->lan = $lan;
-        $this->lang = $lang;
+        $this->lat = $context;
+        $this->lan = $context;
+        $this->lang = $language;
     }
 
     public function fetchData()
