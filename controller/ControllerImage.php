@@ -22,11 +22,15 @@ class ControllerImage extends Controller
             mkdir($dir, 0777, true);
         }
 
-        $files1 = scandir($dir);
-        $files2 = scandir($dir, 1);
+        $files = scandir($dir, 1);
 
-        print_r($files1);
-        print_r($files2);
+        print_r($files);
+
+             $file = $dir.$files[0];
+
+    header('Content-Type: image/jpg');
+    header('Content-Length: ' . filesize($file));
+    echo file_get_contents($file);
     }
 
 
