@@ -20,6 +20,6 @@ class MySql
 
     public function getRecords()
     {
-       return $this->db->exec('SELECT * FROM tbl_records', array());
+       return $this->db->exec('SELECT * FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id', array());
     }
 }
