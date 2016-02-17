@@ -9,7 +9,6 @@
 // Kickstart the framework
 $f3 = require(__DIR__ . '/fatfree/lib/base.php');
 $f3->set('AUTOLOAD', 'model/; controller/; view/; db/; worker/');
-ini_set("always_populate_raw_post_data","-1");
 
 // Load configuration
 $f3->config('config.ini');
