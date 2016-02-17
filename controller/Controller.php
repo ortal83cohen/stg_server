@@ -25,7 +25,15 @@ abstract class Controller
     public function action($actionName  = null)
     {
         if($actionName) {
-            call_user_func($actionName . 'Action');
+//            call_user_func($actionName . 'Action');
+            switch ($actionName){
+                case "get":
+                   $this->getAction();
+                    break;
+                case "post":
+                    $this->postAction();
+            }
+
         }
         $this->render();
     }
