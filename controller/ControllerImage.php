@@ -24,12 +24,12 @@ class ControllerImage extends Controller
 
         $files = scandir($dir, 1);
 
-        print_r($files);
 
-             $file = $dir.$files[0];
 
-    header('Content-Type: image/jpg');
-    header('Content-Length: ' . filesize($file));
+             $file = $dir."/".$files[0];
+//        print_r($files);
+    header('Content-Type: image/jpeg');
+
     echo file_get_contents($file);
     }
 
