@@ -7,15 +7,9 @@
  */
 class ControllerRecords extends Controller
 {
-    private $lat;
-    private $lan;
-    private $lang;
-
-    public function setRequestParameters($context, $language, $customerCountryCode,$orderBy,$type,$limit,$order,$currency)
+    public function getAction()
     {
-        $this->lat = $context;
-        $this->lan = $context;
-        $this->lang = $language;
+        $this->fetchData();
     }
 
     public function fetchData()

@@ -8,6 +8,7 @@
 abstract class Controller
 {
     protected $data = array();
+    protected $request = array();
 
     public function render()
     {
@@ -16,5 +17,25 @@ abstract class Controller
 
     }
 
+    public function setRequest($request)
+    {
+        $this->request = $request;
+    }
+
+    public function action($actionName  = null)
+    {
+        if($actionName) {
+//            call_user_func($actionName . 'Action');
+            switch ($actionName){
+                case "get":
+                   $this->getAction();
+                    break;
+                case "post":
+                    $this->postAction();
+            }
+
+        }
+        $this->render();
+    }
 
 }
