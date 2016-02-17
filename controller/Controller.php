@@ -30,6 +30,9 @@ abstract class Controller
                 case "get":
                    $this->getAction();
                     break;
+                case "getAll":
+                   $this->getAllAction();
+                    break;
                 case "post":
                     $this->postAction();
             }
