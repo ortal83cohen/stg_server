@@ -8,6 +8,7 @@
 abstract class Controller
 {
     protected $data = array();
+    protected $request = array();
 
     public function render()
     {
@@ -16,5 +17,14 @@ abstract class Controller
 
     }
 
+    public function setRequest($request)
+    {
+        $this->request = $request;
+    }
+
+    public function action()
+    {
+        $this->render();
+    }
 
 }
