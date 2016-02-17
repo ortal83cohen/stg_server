@@ -28,7 +28,7 @@ class ControllerImage extends Controller
 
              $file = $dir."/".$files[0];
 //        print_r($files);
-    header('Content-Type: image/jpeg');
+    header('Content-Type: image/JPG');
 
     echo file_get_contents($file);
     }
