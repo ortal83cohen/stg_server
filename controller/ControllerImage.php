@@ -17,6 +17,11 @@ class ControllerImage extends Controller
     {
 
         $dir    =__DIR__."/../pictures";
+
+        if (!file_exists($dir)) {
+            mkdir($dir, 0777, true);
+        }
+
         $files1 = scandir($dir);
         $files2 = scandir($dir, 1);
 
