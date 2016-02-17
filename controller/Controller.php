@@ -22,8 +22,11 @@ abstract class Controller
         $this->request = $request;
     }
 
-    public function action()
+    public function action($actionName  = null)
     {
+        if($actionName) {
+            call_user_func($actionName . 'Action');
+        }
         $this->render();
     }
 

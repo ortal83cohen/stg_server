@@ -7,10 +7,9 @@
  */
 class ControllerRecords extends Controller
 {
-    public function action()
+    public function getAction()
     {
         $this->fetchData();
-        parent::action();
     }
 
     public function fetchData()
