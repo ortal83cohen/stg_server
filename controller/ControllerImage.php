@@ -10,9 +10,8 @@ class ControllerImage extends Controller
 {
     public function postAction()
     {
-
-        $decodedImage = base64_decode($this->data["image"]);
-        file_put_contents("pictures/" . $this->data["name"] . "JPG", $decodedImage);
+        $decodedImage = base64_decode($this->request["image"]);
+        file_put_contents("pictures/" . $this->request["name"] . ".JPG", $decodedImage);
     }
 
 
