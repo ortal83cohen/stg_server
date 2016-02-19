@@ -30,9 +30,9 @@ $f3->route('GET /records',
     }
 );
 
-$f3->route('POST /image',
+$f3->route('POST /records',
     function ($f3) {
-        $controller = new ControllerImage();//customerCountryCode=IL&language=en&orderBy=distance&offset=0type=spr&limit=15&order=asc&currency=ILS&context=32.1624241,34.8078849;5.0&apiKey=Ec95jbYA1iuAt&campaignId=280832094
+        $controller = new ControllerRecords();//customerCountryCode=IL&language=en&orderBy=distance&offset=0type=spr&limit=15&order=asc&currency=ILS&context=32.1624241,34.8078849;5.0&apiKey=Ec95jbYA1iuAt&campaignId=280832094
         $controller->setRequest(json_decode($f3->get('BODY'),1));
         $controller->action("post");
     }

@@ -348,21 +348,24 @@ final class Base extends Prefab implements ArrayAccess
                     'beforeroute,afterroute') === FALSE) &&
             !$prior && PHP_SAPI != 'cli' && !$this->hive['QUIET']
         )
+            $massage =$this->encode($text ?: $req);
+             $t=   $this->hive['DEBUG'] ? $trace : '';
+        $data = ob_get_clean();
             echo $this->hive['AJAX'] ?
-                json_encode($this->hive['ERROR']) :
-                ('<!DOCTYPE html>' . $eol .
-                    '<html>' . $eol .
-                    '<head>' .
-                    '<title>' . $code . ' ' . $header . '</title>' .
-                    ($highlight ?
-                        ('<style>' . $this->read($css) . '</style>') : '') .
-                    '</head>' . $eol .
-                    '<body>' . $eol .
-                    '<h1>' . $header . '</h1>' . $eol .
-                    '<p>' . $this->encode($text ?: $req) . '</p>' . $eol .
-                    ($this->hive['DEBUG'] ? ('<pre>' . $trace . '</pre>' . $eol) : '') .
-                    '</body>' . $eol .
-                    '</html>');
+                json_encode($this->hive['ERROR']) : json_encode(array("error"=>$code,"header"=>$header,"massage"=>$massage,"trace"=>$t,"data"=>$data));
+//                ('<!DOCTYPE html>' . $eol .
+//                    '<html>' . $eol .
+//                    '<head>' .
+//                    '<title>' . $code . ' ' . $header . '</title>' .
+//                    ($highlight ?
+//                        ('<style>' . $this->read($css) . '</style>') : '') .
+//                    '</head>' . $eol .
+//                    '<body>' . $eol .
+//                    '<h1>' . $header . '</h1>' . $eol .
+//                    '<p>' . $this->encode($text ?: $req) . '</p>' . $eol .
+//                    ($this->hive['DEBUG'] ? ('<pre>' . $trace . '</pre>' . $eol) : '') .
+//                    '</body>' . $eol .
+//                    '</html>');
         if ($this->hive['HALT'])
             die;
     }
