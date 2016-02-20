@@ -15,8 +15,9 @@ class MySql extends F3instance
      */
     public function __construct()
     {
-//        $this->db = new \DB\SQL('mysql:host=mysqlcluster7.registeredsite.com;port=3306;dbname=stg', 'ortal83cohen', "1Q1q1q1q");
-        $this->db = new \DB\SQL('mysql:host=sql2.freemysqlhosting.net;port=3306;dbname=sql2106079', 'sql2106079', "vS6%gG3!");
+        $host = $this->get("MYSQL_HOST");
+        $this->db = new \DB\SQL("mysql:host=$host;port=3306;dbname=stg", 'ortal83cohen', "1Q1q1q1q");
+//        $this->db = new \DB\SQL('mysql:host=sql2.freemysqlhosting.net;port=3306;dbname=sql2106079', 'sql2106079', "vS6%gG3!");
     }
 
     public function getRecords()
@@ -33,7 +34,7 @@ class MySql extends F3instance
 
         $this->db->exec("INSERT INTO tbl_records ( locationId, lang, title, description, imageUrl, likes, unLikes, recordUrl) VALUES
 	( :locationId, :lang, :title, :description, :imageUrl, :likes, :unLikes, :recordUrl);", array(":locationId" => $this->db->lastInsertId(), ":lang" => "en", ":title" => $request["title"]
-        , ":description" => $request["description"], ":imageUrl" => $this->get("DOMAIN") . $this->get("IMAGE_LIBRARY") . $request["title"] . $this->get("IMAGE_TYPE"), ":likes" => 10, ":unLikes" => 20
+        , ":description" => $request["description"], ":imageUrl" => $this->get("DOMAIN") . $this->get("IMAGE_LIBRARY") . $request["title"] . $this->get("IMAGE_TYPE"), ":likes" => 0, ":unLikes" =>0
 
         , ":recordUrl" => null));
         $this->db->commit();
