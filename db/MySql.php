@@ -5,7 +5,7 @@
  * User: ortal
  * Date: 2/8/2016
  */
-class MySql
+class MySql extends F3instance
 {// if I had more time I would replace this class with DAL framework
 
     private $db;
