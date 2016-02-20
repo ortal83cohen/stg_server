@@ -6,7 +6,7 @@ RewriteEngine On
 # containing this .htaccess file
 #
 # RewriteBase /
-
+RewriteRule ^(pictures)($|/) - [L]
 RewriteRule ^(tmp)\/|\.ini$ - [R=404]
 
 RewriteCond %{REQUEST_FILENAME} !-l

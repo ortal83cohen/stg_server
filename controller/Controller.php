@@ -5,7 +5,7 @@
  * User: ortal
  * Date: 2/7/2016
  */
-abstract class Controller
+abstract class Controller extends F3instance
 {
     protected $data = array();
     protected $request = array();

@@ -18,13 +18,14 @@ class ControllerRecords extends Controller
         $this->data = $sql->getRecords();
 
     }
+
     public function postAction()
     {
         $sql = new MySql();
         $this->data = $sql->setRecords($this->request);
 
         $decodedImage = base64_decode($this->request["image"]);
-        file_put_contents("pictures/" . $this->request["title"] . ".JPG", $decodedImage);
+        file_put_contents($this->get("IMAGE_LIBRARY") . $this->request["title"] . $this->get("IMAGE_TYPE"), $decodedImage);
     }
 
 }
