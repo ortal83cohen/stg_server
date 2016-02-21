@@ -36,7 +36,7 @@ class MySql extends F3instance
 	( :locationId, :lang, :title, :description, :imageUrl, :likes, :unLikes, :recordUrl);", array(":locationId" => $this->db->lastInsertId(), ":lang" => "en", ":title" => $request["title"]
         , ":description" => $request["description"], ":imageUrl" => $this->get("DOMAIN") . $this->get("IMAGE_LIBRARY") . $request["title"] . $this->get("IMAGE_TYPE"), ":likes" => 0, ":unLikes" =>0
 
-        , ":recordUrl" => null));
+        , ":recordUrl" =>  $this->get("DOMAIN") . $this->get("IMAGE_LIBRARY") . $request["title"] .".txt"));
         $this->db->commit();
     }
 }

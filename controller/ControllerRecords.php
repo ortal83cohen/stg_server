@@ -26,6 +26,7 @@ class ControllerRecords extends Controller
 
         $decodedImage = base64_decode($this->request["image"]);
         file_put_contents($this->get("IMAGE_LIBRARY") . $this->request["title"] . $this->get("IMAGE_TYPE"), $decodedImage);
+        file_put_contents($this->get("IMAGE_LIBRARY") . $this->request["title"] .".txt", $this->request["record"]);
     }
 
 }
