@@ -22,11 +22,14 @@ class ControllerRecords extends Controller
     public function postAction()
     {
         $sql = new MySql();
-        $this->data = $sql->setRecords($this->request);
+        $id = $sql->setRecords($this->request);
+        $title = str_replace(' ', '', $this->request["title"] . $id);
 
         $decodedImage = base64_decode($this->request["image"]);
-        file_put_contents($this->get("IMAGE_LIBRARY") . $this->request["title"] . $this->get("IMAGE_TYPE"), $decodedImage);
-        file_put_contents($this->get("IMAGE_LIBRARY") . $this->request["title"] .".txt", $this->request["record"]);
+        $decodedRecord = base64_decode($this->request["record"]);
+        file_put_contents($this->get("IMAGE_LIBRARY") . $title . $this->get("IMAGE_TYPE"), $decodedImage);
+        file_put_contents($this->get("RECORD_LIBRARY") . $title . $this->get("RECORD_TYPE"), $decodedRecord);
+
     }
 
 }

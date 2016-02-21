@@ -31,12 +31,14 @@ class MySql extends F3instance
         $this->db->begin();
         $this->db->exec("INSERT INTO tbl_locations ( name, lat, lon, type) VALUES
     (:name, :lat, :lon, :type);", array(":name" => $request["locationName"], ":lat" => $request["lat"], ":lon" => $request["lon"], ":type" => $request["type"]));
-
+        $id = $this->db->lastInsertId();
         $this->db->exec("INSERT INTO tbl_records ( locationId, lang, title, description, imageUrl, likes, unLikes, recordUrl) VALUES
-	( :locationId, :lang, :title, :description, :imageUrl, :likes, :unLikes, :recordUrl);", array(":locationId" => $this->db->lastInsertId(), ":lang" => "en", ":title" => $request["title"]
-        , ":description" => $request["description"], ":imageUrl" => $this->get("DOMAIN") . $this->get("IMAGE_LIBRARY") . $request["title"] . $this->get("IMAGE_TYPE"), ":likes" => 0, ":unLikes" =>0
+	( :locationId, :lang, :title, :description, :imageUrl, :likes, :unLikes, :recordUrl);", array(":locationId" => $id, ":lang" => "en", ":title" => $request["title"]
+        , ":description" => $request["description"], ":imageUrl" => str_replace(' ', '', $this->get("DOMAIN") . $this->get("IMAGE_LIBRARY") . $request["title"] . $id . $this->get("IMAGE_TYPE")), ":likes" => 0, ":unLikes" => 0
 
-        , ":recordUrl" =>  $this->get("DOMAIN") . $this->get("IMAGE_LIBRARY") . $request["title"] .".txt"));
+        , ":recordUrl" => str_replace(' ', '', $this->get("DOMAIN") . $this->get("RECORD_LIBRARY") . $request["title"] . $id . $this->get("RECORD_TYPE"))));
         $this->db->commit();
+
+        return $id;
     }
 }
