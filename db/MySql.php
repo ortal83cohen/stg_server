@@ -41,4 +41,23 @@ class MySql extends F3instance
 
         return $id;
     }
+
+    public function updateRecords($request)
+    {
+
+        $this->db->begin();
+        if($request["status"]=="like"){
+            $this->db->exec("UPDATE tbl_records set likes = likes +1 WHERE id = :id",
+                array( ":id" => $request["id"]));
+        }
+        if($request["status"]=="unlike"){
+            $this->db->exec("UPDATE tbl_records set unlikes = unlikes +1 WHERE id = :id",
+                array( ":id" => $request["id"]));
+        }
+
+
+
+        $this->db->commit();
+
+    }
 }

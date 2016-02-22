@@ -17,28 +17,39 @@ abstract class Controller extends F3instance
 
     }
 
-    public function setRequest($request )
+    public function beforeAction()
+    {
+    }
+
+    public function afterAction()
+    {
+        $this->render();
+    }
+
+    public function setRequest($request)
     {
         $this->request = $request;
     }
 
-    public function action($actionName  = null)
+    public function action()
     {
-        if($actionName) {
-//            call_user_func($actionName . 'Action');
-            switch ($actionName){
-                case "get":
-                   $this->getAction();
-                    break;
-                case "getAll":
-                   $this->getAllAction();
-                    break;
-                case "post":
-                    $this->postAction();
-            }
+        $this->beforeAction();
 
+//            call_user_func($actionName . 'Action');
+        switch ($_SERVER['REQUEST_METHOD']) {
+            case "GET":
+                $this->getAction();
+                break;
+            case "POST":
+                $this->postAction();
+                break;
+            case "PUT":
+                $this->putAction();
+                break;
         }
-        $this->render();
+
+        $this->afterAction();
+
     }
 
 }

@@ -9,25 +9,10 @@
 class ControllerImage extends Controller
 {
 
-    public function getAllAction()
-    {
-
-        $dir = __DIR__ . "/../pictures";
-        if (!file_exists($dir)) {
-            mkdir($dir, 0777, true);
-        }
-        $files = scandir($dir, 1);
-foreach ($files as  $file){
-    echo $file."<br>";
-}
-
-
-    }
-
     public function getAction()
     {
         $dir = __DIR__ . "/../pictures";
-        $file = $dir . "/" . $this->request['name'].".JPG";
+        $file = $dir . "/" . $this->request['name'] . ".JPG";
 //        print_r($file);
         header('Content-Type: image/JPG');
 

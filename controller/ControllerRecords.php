@@ -7,22 +7,27 @@
  */
 class ControllerRecords extends Controller
 {
+    private $sql;
+
     public function getAction()
     {
         $this->fetchData();
     }
 
+    public function beforeAction()
+    {
+        $this->sql = new MySql();
+    }
+
     public function fetchData()
     {
-        $sql = new MySql();
-        $this->data = $sql->getRecords();
-
+        $this->data = $this->sql->getRecords();
     }
 
     public function postAction()
     {
-        $sql = new MySql();
-        $id = $sql->setRecords($this->request);
+
+        $id = $this->sql->setRecords($this->request);
         $title = str_replace(' ', '', $this->request["title"] . $id);
 
         $decodedImage = base64_decode($this->request["image"]);
@@ -30,6 +35,12 @@ class ControllerRecords extends Controller
         file_put_contents($this->get("IMAGE_LIBRARY") . $title . $this->get("IMAGE_TYPE"), $decodedImage);
         file_put_contents($this->get("RECORD_LIBRARY") . $title . $this->get("RECORD_TYPE"), $decodedRecord);
 
+    }
+
+    public function putAction()
+    {
+
+        $this->sql->updateRecords($this->request);
     }
 
 }
