@@ -22,7 +22,11 @@ class MySql extends F3instance
 
     public function getRecords()
     {
-        return $this->db->exec('SELECT tbl_records.*,tbl_locations.*,tbl_records.* as canVoat FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id LEFT JOIN tbl_user_vote ON tbl_records.id = recordId', array());
+        return $this->db->exec('SELECT * FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id', array());
+    }
+    public function getVoteForUser()
+    {
+        return $this->db->exec('SELECT * FROM tbl_users_votes', array());
     }
 
     public function setRecords($request)
@@ -43,7 +47,7 @@ class MySql extends F3instance
     {
         $this->db->begin();
 
-        $this->db->exec("INSERT INTO tbl_user_vote ( userId, recordId) VALUES
+        $this->db->exec("INSERT INTO tbl_users_votes ( userId, recordId) VALUES
             (:userId, :recordId);", array(":userId" => $request["userId"], ":recordId" => $request["id"]));
 
         if ($request["status"] == "like") {
@@ -72,7 +76,7 @@ class MySql extends F3instance
     {
         $this->db->begin();
 
-        $this->db->exec("INSERT INTO tbl_users_login ( userId) VALUES
+        $this->db->exec("INSERT INTO tbl_users_logins ( userId) VALUES
     (:userId);", array(":userId" => $request["userId"]));
 
         $this->db->commit();
