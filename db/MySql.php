@@ -53,13 +53,23 @@ class MySql extends F3instance
         $this->db->commit();
     }
 
-    public function setUsers($request)
+    public function setUser($request)
     {
         $this->db->begin();
 
         $this->db->exec("INSERT INTO tbl_users ( id, email, imageUrl, firstName,lastName) VALUES
     (:id, :email, :imageUrl, :firstName,:lastName);", array(":id" => $request["userId"], ":email" => $request["email"], ":imageUrl" => $request["imageUrl"]
         , ":firstName" => $request["firstName"], ":lastName" => $request["lastName"]));
+
+        $this->db->commit();
+    }
+
+    public function setUsersLogin($request)
+    {
+        $this->db->begin();
+
+        $this->db->exec("INSERT INTO tbl_users_login ( userId) VALUES
+    (:userId);", array(":userId" => $request["userId"]));
 
         $this->db->commit();
     }

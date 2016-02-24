@@ -26,7 +26,13 @@ class ControllerUsers extends Controller
 
     public function postAction()
     {
-        $this->sql->setUsers($this->request);
+        $this->sql->setUsersLogin($this->request);
+        try {
+            $this->sql->setUser($this->request);
+        } catch (Exception $e) {
+
+        }
+
     }
 
     public function putAction()
