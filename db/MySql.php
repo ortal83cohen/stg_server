@@ -42,6 +42,10 @@ class MySql extends F3instance
     public function updateRecords($request)
     {
         $this->db->begin();
+
+        $this->db->exec("INSERT INTO tbl_user_vote ( userId, recordId) VALUES
+            (:userId, :recordId);", array(":userId" => $request["userId"], ":recordId" => $request["id"]));
+
         if ($request["status"] == "like") {
             $this->db->exec("UPDATE tbl_records set likes = likes +1 WHERE id = :id",
                 array(":id" => $request["id"]));
