@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2048c492-e671-4451-ae11-d5f22206b97f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ControllerUsers.php" afterPath="$PROJECT_DIR$/controller/ControllerUsers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/MySql.php" afterPath="$PROJECT_DIR$/db/MySql.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stg.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,17 +41,28 @@
       <file leaf-file-name="MySql.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/MySql.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5908544" vertical-offset="716" max-vertical-offset="1547">
-              <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.36823106" vertical-offset="102" max-vertical-offset="1615">
+              <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
               <folding>
-                <marker date="1456306094082" expanded="true" signature="624:707" placeholder="SELECT * FRO..tbl_records..." />
-                <marker date="1456306094082" expanded="true" signature="827:914" placeholder="INSERT INTO ..." />
-                <marker date="1456306094082" expanded="true" signature="1112:1305" placeholder="INSERT INTO ..." />
-                <marker date="1456306094082" expanded="true" signature="1974:2028" placeholder="UPDATE tbl_r..." />
-                <marker date="1456306094082" expanded="true" signature="2165:2223" placeholder="UPDATE tbl_r..." />
-                <marker date="1456306094082" expanded="true" signature="2419:2541" placeholder="INSERT INTO ..." />
-                <marker date="1456306094082" expanded="true" signature="2876:2934" placeholder="INSERT INTO ..." />
+                <marker date="1456308613766" expanded="true" signature="624:813" placeholder="SELECT tbl_r..tbl_records..." />
+                <marker date="1456308613766" expanded="true" signature="933:1020" placeholder="INSERT INTO ..." />
+                <marker date="1456308613766" expanded="true" signature="1218:1411" placeholder="INSERT INTO ..." />
+                <marker date="1456308613766" expanded="true" signature="2033:2118" placeholder="INSERT INTO ..." />
+                <marker date="1456308613766" expanded="true" signature="2268:2322" placeholder="UPDATE tbl_r..." />
+                <marker date="1456308613766" expanded="true" signature="2459:2517" placeholder="UPDATE tbl_r..." />
+                <marker date="1456308613766" expanded="true" signature="2713:2835" placeholder="INSERT INTO ..." />
+                <marker date="1456308613766" expanded="true" signature="3170:3228" placeholder="INSERT INTO ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerRecords.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/ControllerRecords.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.884615" vertical-offset="23" max-vertical-offset="867">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -278,13 +289,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1456306094082" expanded="true" signature="624:707" placeholder="SELECT * FRO..tbl_records..." />
-            <marker date="1456306094082" expanded="true" signature="827:914" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="1112:1305" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="1974:2028" placeholder="UPDATE tbl_r..." />
-            <marker date="1456306094082" expanded="true" signature="2165:2223" placeholder="UPDATE tbl_r..." />
-            <marker date="1456306094082" expanded="true" signature="2419:2541" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="2876:2934" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="624:813" placeholder="SELECT tbl_r..tbl_records..." />
+            <marker date="1456308613766" expanded="true" signature="933:1020" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="1218:1411" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="2033:2118" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="2268:2322" placeholder="UPDATE tbl_r..." />
+            <marker date="1456308613766" expanded="true" signature="2459:2517" placeholder="UPDATE tbl_r..." />
+            <marker date="1456308613766" expanded="true" signature="2713:2835" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="3170:3228" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -341,13 +353,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="22" column="68" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
           <folding>
-            <marker date="1456306094082" expanded="true" signature="624:707" placeholder="SELECT * FRO..tbl_records..." />
-            <marker date="1456306094082" expanded="true" signature="827:914" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="1112:1305" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="1974:2028" placeholder="UPDATE tbl_r..." />
-            <marker date="1456306094082" expanded="true" signature="2165:2223" placeholder="UPDATE tbl_r..." />
-            <marker date="1456306094082" expanded="true" signature="2419:2541" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="2876:2934" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="624:813" placeholder="SELECT tbl_r..tbl_records..." />
+            <marker date="1456308613766" expanded="true" signature="933:1020" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="1218:1411" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="2033:2118" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="2268:2322" placeholder="UPDATE tbl_r..." />
+            <marker date="1456308613766" expanded="true" signature="2459:2517" placeholder="UPDATE tbl_r..." />
+            <marker date="1456308613766" expanded="true" signature="2713:2835" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="3170:3228" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -423,13 +436,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
-            <marker date="1456306094082" expanded="true" signature="624:707" placeholder="SELECT * FRO..tbl_records..." />
-            <marker date="1456306094082" expanded="true" signature="827:914" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="1112:1305" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="1974:2028" placeholder="UPDATE tbl_r..." />
-            <marker date="1456306094082" expanded="true" signature="2165:2223" placeholder="UPDATE tbl_r..." />
-            <marker date="1456306094082" expanded="true" signature="2419:2541" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="2876:2934" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="624:813" placeholder="SELECT tbl_r..tbl_records..." />
+            <marker date="1456308613766" expanded="true" signature="933:1020" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="1218:1411" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="2033:2118" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="2268:2322" placeholder="UPDATE tbl_r..." />
+            <marker date="1456308613766" expanded="true" signature="2459:2517" placeholder="UPDATE tbl_r..." />
+            <marker date="1456308613766" expanded="true" signature="2713:2835" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="3170:3228" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -491,13 +505,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
-            <marker date="1456306094082" expanded="true" signature="624:707" placeholder="SELECT * FRO..tbl_records..." />
-            <marker date="1456306094082" expanded="true" signature="827:914" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="1112:1305" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="1974:2028" placeholder="UPDATE tbl_r..." />
-            <marker date="1456306094082" expanded="true" signature="2165:2223" placeholder="UPDATE tbl_r..." />
-            <marker date="1456306094082" expanded="true" signature="2419:2541" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="2876:2934" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="624:813" placeholder="SELECT tbl_r..tbl_records..." />
+            <marker date="1456308613766" expanded="true" signature="933:1020" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="1218:1411" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="2033:2118" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="2268:2322" placeholder="UPDATE tbl_r..." />
+            <marker date="1456308613766" expanded="true" signature="2459:2517" placeholder="UPDATE tbl_r..." />
+            <marker date="1456308613766" expanded="true" signature="2713:2835" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="3170:3228" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -610,14 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ControllerRecords.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="867">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -682,18 +689,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller/ControllerRecords.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.884615" vertical-offset="23" max-vertical-offset="867">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/MySql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5908544" vertical-offset="716" max-vertical-offset="1547">
-          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.36823106" vertical-offset="102" max-vertical-offset="1615">
+          <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
           <folding>
-            <marker date="1456306094082" expanded="true" signature="624:707" placeholder="SELECT * FRO..tbl_records..." />
-            <marker date="1456306094082" expanded="true" signature="827:914" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="1112:1305" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="1974:2028" placeholder="UPDATE tbl_r..." />
-            <marker date="1456306094082" expanded="true" signature="2165:2223" placeholder="UPDATE tbl_r..." />
-            <marker date="1456306094082" expanded="true" signature="2419:2541" placeholder="INSERT INTO ..." />
-            <marker date="1456306094082" expanded="true" signature="2876:2934" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="624:813" placeholder="SELECT tbl_r..tbl_records..." />
+            <marker date="1456308613766" expanded="true" signature="933:1020" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="1218:1411" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="2033:2118" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="2268:2322" placeholder="UPDATE tbl_r..." />
+            <marker date="1456308613766" expanded="true" signature="2459:2517" placeholder="UPDATE tbl_r..." />
+            <marker date="1456308613766" expanded="true" signature="2713:2835" placeholder="INSERT INTO ..." />
+            <marker date="1456308613766" expanded="true" signature="3170:3228" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

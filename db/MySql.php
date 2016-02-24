@@ -22,7 +22,7 @@ class MySql extends F3instance
 
     public function getRecords()
     {
-        return $this->db->exec('SELECT * FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id', array());
+        return $this->db->exec('SELECT tbl_records.*,tbl_locations.*,tbl_records.* as canVoat FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id LEFT JOIN tbl_user_vote ON tbl_records.id = recordId', array());
     }
 
     public function setRecords($request)
