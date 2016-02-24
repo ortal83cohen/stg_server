@@ -27,7 +27,6 @@ class MySql extends F3instance
 
     public function setRecords($request)
     {
-
         $this->db->begin();
         $this->db->exec("INSERT INTO tbl_locations ( name, lat, lon, type) VALUES
     (:name, :lat, :lon, :type);", array(":name" => $request["locationName"], ":lat" => $request["lat"], ":lon" => $request["lon"], ":type" => $request["type"]));
@@ -35,29 +34,43 @@ class MySql extends F3instance
         $this->db->exec("INSERT INTO tbl_records ( locationId, lang, title, description, imageUrl, likes, unLikes, recordUrl) VALUES
 	( :locationId, :lang, :title, :description, :imageUrl, :likes, :unLikes, :recordUrl);", array(":locationId" => $id, ":lang" => "en", ":title" => $request["title"]
         , ":description" => $request["description"], ":imageUrl" => str_replace(' ', '', $this->get("DOMAIN") . $this->get("IMAGE_LIBRARY") . $request["title"] . $id . $this->get("IMAGE_TYPE")), ":likes" => 0, ":unLikes" => 0
-
         , ":recordUrl" => str_replace(' ', '', $this->get("DOMAIN") . $this->get("RECORD_LIBRARY") . $request["title"] . $id . $this->get("RECORD_TYPE"))));
         $this->db->commit();
-
         return $id;
     }
 
     public function updateRecords($request)
     {
-
         $this->db->begin();
-        if($request["status"]=="like"){
+        if ($request["status"] == "like") {
             $this->db->exec("UPDATE tbl_records set likes = likes +1 WHERE id = :id",
-                array( ":id" => $request["id"]));
+                array(":id" => $request["id"]));
         }
-        if($request["status"]=="unlike"){
+        if ($request["status"] == "unlike") {
             $this->db->exec("UPDATE tbl_records set unlikes = unlikes +1 WHERE id = :id",
-                array( ":id" => $request["id"]));
+                array(":id" => $request["id"]));
         }
+        $this->db->commit();
+    }
 
+    public function setUsers($request)
+    {
+        $this->db->begin();
 
+        $this->db->exec("INSERT INTO tbl_users ( id, email, imageUrl, firstName,lastName) VALUES
+    (:id, :email, :imageUrl, :firstName,:lastName);", array(":id" => $request["userId"], ":email" => $request["email"], ":imageUrl" => $request["imageUrl"]
+        , ":firstName" => $request["firstName"], ":lastName" => $request["lastName"]));
 
         $this->db->commit();
+    }
 
+    public function updateUsers($request)
+    {
+//        $this->db->begin();
+//
+//        $this->db->exec("UPDATE tbl_users set ... WHERE id = :id",
+//            array(":id" => $request["id"]));
+//
+//        $this->db->commit();
     }
 }
