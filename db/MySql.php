@@ -20,13 +20,9 @@ class MySql extends F3instance
 //        $this->db = new \DB\SQL('mysql:host=sql2.freemysqlhosting.net;port=3306;dbname=sql2106079', 'sql2106079', "vS6%gG3!");
     }
 
-    public function getRecords()
+    public function getRecords($request)
     {
-        return $this->db->exec('SELECT * FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id', array());
-    }
-    public function getVoteForUser()
-    {
-        return $this->db->exec('SELECT * FROM tbl_users_votes', array());
+        return $this->db->exec('SELECT tbl_records.*,tbl_locations.*,(tbl_records.id not in ((select recordId from tbl_users_votes WHERE userId = :userId))) as canVote FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id', array(":userId"=>$request["userId"]));
     }
 
     public function setRecords($request)

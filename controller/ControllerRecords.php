@@ -21,7 +21,7 @@ class ControllerRecords extends Controller
 
     public function fetchData()
     {
-        $this->data = $this->sql->getRecords();
+        $this->data = $this->sql->getRecords($this->request);
     }
 
     public function postAction()
