@@ -43,8 +43,8 @@ class MySql extends F3instance
     {
         $this->db->begin();
 
-        $this->db->exec("INSERT INTO tbl_users_votes ( userId, recordId) VALUES
-            (:userId, :recordId);", array(":userId" => $request["userId"], ":recordId" => $request["id"]));
+        $this->db->exec("INSERT INTO tbl_users_votes ( userId, recordId,voted) VALUES
+            (:userId, :recordId,:voted);", array(":userId" => $request["userId"], ":recordId" => $request["id"],":voted"=>$request["status"]));
 
         if ($request["status"] == "like") {
             $this->db->exec("UPDATE tbl_records set likes = likes +1 WHERE id = :id",
