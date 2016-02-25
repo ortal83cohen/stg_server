@@ -22,7 +22,7 @@ class MySql extends F3instance
 
     public function getRecords($request)
     {
-        return $this->db->exec('SELECT tbl_records.*,tbl_locations.*,(tbl_records.id not in ((select recordId from tbl_users_votes WHERE userId = :userId))) as canVote FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id', array(":userId"=>$request["userId"]));
+        return $this->db->exec('SELECT tbl_records.*,tbl_locations.*,(tbl_records.id not in ((select recordId from tbl_users_votes WHERE userId = :userId))) as canVote FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id LEFT JOIN tbl_users ON userId = tbl_users.id', array(":userId"=>$request["userId"]));
     }
 
     public function setRecords($request)
@@ -31,10 +31,10 @@ class MySql extends F3instance
         $this->db->exec("INSERT INTO tbl_locations ( name, lat, lon, type) VALUES
     (:name, :lat, :lon, :type);", array(":name" => $request["locationName"], ":lat" => $request["lat"], ":lon" => $request["lon"], ":type" => $request["type"]));
         $id = $this->db->lastInsertId();
-        $this->db->exec("INSERT INTO tbl_records ( locationId, lang, title, description, imageUrl, likes, unLikes, recordUrl) VALUES
-	( :locationId, :lang, :title, :description, :imageUrl, :likes, :unLikes, :recordUrl);", array(":locationId" => $id, ":lang" => "en", ":title" => $request["title"]
+        $this->db->exec("INSERT INTO tbl_records ( locationId, lang, title, description, imageUrl, likes, unLikes, recordUrl,userId) VALUES
+	( :locationId, :lang, :title, :description, :imageUrl, :likes, :unLikes, :recordUrl, :userId);", array(":locationId" => $id, ":lang" => "en", ":title" => $request["title"]
         , ":description" => $request["description"], ":imageUrl" => str_replace(' ', '', $this->get("DOMAIN") . $this->get("IMAGE_LIBRARY") . $request["title"] . $id . $this->get("IMAGE_TYPE")), ":likes" => 0, ":unLikes" => 0
-        , ":recordUrl" => str_replace(' ', '', $this->get("DOMAIN") . $this->get("RECORD_LIBRARY") . $request["title"] . $id . $this->get("RECORD_TYPE"))));
+        , ":recordUrl" => str_replace(' ', '', $this->get("DOMAIN") . $this->get("RECORD_LIBRARY") . $request["title"] . $id . $this->get("RECORD_TYPE")),":userId"=>$request["userId"]));
         $this->db->commit();
         return $id;
     }
