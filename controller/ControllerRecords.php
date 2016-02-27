@@ -21,7 +21,15 @@ class ControllerRecords extends Controller
 
     public function fetchData()
     {
-        $this->data = $this->sql->getRecords($this->request);
+        switch($this->request['type']){
+            case "spr":
+                $this->data = $this->sql->getRecords($this->request);
+                break;
+            case "viewport":
+                $this->data = $this->sql->getViewportRecords($this->request);
+                break;
+        }
+
     }
 
     public function postAction()

@@ -17,12 +17,19 @@ class MySql extends F3instance
     {
         $host = $this->get("MYSQL_HOST");
         $this->db = new \DB\SQL("mysql:host=$host;port=3306;dbname=stg", 'ortal83cohen', "1Q1q1q1q");
-//        $this->db = new \DB\SQL('mysql:host=sql2.freemysqlhosting.net;port=3306;dbname=sql2106079', 'sql2106079', "vS6%gG3!");
     }
 
     public function getRecords($request)
     {
-        return $this->db->exec('SELECT tbl_records.*,tbl_locations.*,(tbl_records.id not in ((select recordId from tbl_users_votes WHERE userId = :userId))) as canVote FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id LEFT JOIN tbl_users ON userId = tbl_users.id', array(":userId"=>$request["userId"]));
+        return $this->db->exec('SELECT tbl_records.*,tbl_locations.*,(tbl_records.id not in ((select recordId from tbl_users_votes WHERE userId = :userId))) as canVote FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id LEFT JOIN tbl_users ON userId = tbl_users.id LIMIT '.$request["limit"], array(":userId"=>$request["userId"]));
+    }
+    public function getViewportRecords($request)
+    {//32.2029005,34.9808757;32.002900499999996,34.780875699999996 /32.10313416
+        $location = explode(";",$request["context"]);
+        $maxLocation =  explode(",",$location[0]);
+        $minLocation =  explode(",",$location[1]);
+        return $this->db->exec('SELECT tbl_records.*,tbl_locations.*,(tbl_records.id not in ((select recordId from tbl_users_votes WHERE userId = :userId))) as canVote FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id LEFT JOIN tbl_users ON userId = tbl_users.id  WHERE lat>:minlat and lat<:maxlat and lon>:minlon and lon<:maxlon LIMIT '.$request["limit"],
+            array(":userId"=>$request["userId"],":minlat"=>$minLocation[0],":maxlat"=>$maxLocation[0],":minlon"=>$minLocation[1],":maxlon"=>$maxLocation[1]));
     }
 
     public function setRecords($request)
