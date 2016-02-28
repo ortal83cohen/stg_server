@@ -21,12 +21,12 @@ class ControllerRecords extends Controller
 
     public function fetchData()
     {
-        switch($this->request['type']){
-            case "spr":
-                $this->data = $this->sql->getRecords($this->request);
+        switch ($this->request['type']) {
+            case "service_gps_viewport":
+                $this->data = $this->sql->getServiceGpsViewportRecords($this->request);
                 break;
-            case "viewport":
-                $this->data = $this->sql->getViewportRecords($this->request);
+            default:
+                $this->data = $this->sql->getRecords($this->request);
                 break;
         }
 

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2048c492-e671-4451-ae11-d5f22206b97f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ControllerRecords.php" afterPath="$PROJECT_DIR$/controller/ControllerRecords.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/MySql.php" afterPath="$PROJECT_DIR$/db/MySql.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stg.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,55 +22,44 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="stg" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3658243" vertical-offset="172" max-vertical-offset="1309">
+            <state vertical-scroll-proportion="0.0">
               <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControllerUsers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/ControllerUsers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="816">
-              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySql.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MySql.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/MySql.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846" vertical-offset="153" max-vertical-offset="1615">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.68248177">
+              <caret line="40" column="98" selection-start-line="40" selection-start-column="98" selection-end-line="40" selection-end-column="98" />
               <folding>
-                <marker date="1456385967726" expanded="true" signature="632:639" placeholder="SELECT tbl_r..tbl_records..." />
-                <marker date="1456385967726" expanded="true" signature="632:842" placeholder="SELECT tbl_r..tbl_records..." />
-                <marker date="1456385967726" expanded="true" signature="694:753" placeholder="select recor..tbl_users_votes..." />
-                <marker date="1456385967726" expanded="true" signature="991:1078" placeholder="INSERT INTO ..." />
-                <marker date="1456385967726" expanded="true" signature="1276:1469" placeholder="INSERT INTO ..." />
-                <marker date="1456385967726" expanded="true" signature="2091:2178" placeholder="INSERT INTO ..." />
-                <marker date="1456385967726" expanded="true" signature="2095:2149" placeholder="UPDATE tbl_r..." />
-                <marker date="1456385967726" expanded="true" signature="2328:2382" placeholder="UPDATE tbl_r..." />
-                <marker date="1456385967726" expanded="true" signature="2328:2386" placeholder="UPDATE tbl_r..." />
-                <marker date="1456385967726" expanded="true" signature="2519:2577" placeholder="UPDATE tbl_r..." />
-                <marker date="1456385967726" expanded="true" signature="2700:2763" placeholder="INSERT INTO ..." />
-                <marker date="1456385967726" expanded="true" signature="2773:2895" placeholder="INSERT INTO ..." />
-                <marker date="1456385967726" expanded="true" signature="3151:3183" placeholder="INSERT INTO ..." />
-                <marker date="1456385967726" expanded="true" signature="3230:3289" placeholder="INSERT INTO ..." />
+                <marker date="1456648432128" expanded="true" signature="503:758" placeholder="SELECT tbl_r... tbl_records" />
+                <marker date="1456648432128" expanded="true" signature="503:764" placeholder="SELECT tbl_r... tbl_records" />
+                <marker date="1456648432128" expanded="true" signature="503:765" placeholder="SELECT tbl_r... tbl_records" />
+                <marker date="1456648432128" expanded="true" signature="565:624" placeholder="select recor... tbl_users_votes" />
+                <marker date="1456648432128" expanded="true" signature="1085:1171" placeholder="INSERT INTO tbl_service_gps... " />
+                <marker date="1456648432128" expanded="true" signature="1352:1939" placeholder="SELECT tbl_r... tbl_records" />
+                <marker date="1456648432128" expanded="true" signature="1352:1940" placeholder="SELECT tbl_r... tbl_records" />
+                <marker date="1456648432128" expanded="true" signature="1414:1473" placeholder="select recor... tbl_users_votes" />
+                <marker date="1456648432128" expanded="true" signature="1775:1896" placeholder="SELECT COUNT... tbl_service_gps" />
+                <marker date="1456648432128" expanded="true" signature="2243:2330" placeholder="INSERT INTO tbl_locations... " />
+                <marker date="1456648432128" expanded="true" signature="2528:2737" placeholder="INSERT INTO tbl_records... " />
+                <marker date="1456648432128" expanded="true" signature="3392:3492" placeholder="INSERT INTO tbl_users_votes... " />
+                <marker date="1456648432128" expanded="true" signature="3674:3728" placeholder="UPDATE tbl_r... " />
+                <marker date="1456648432128" expanded="true" signature="3865:3923" placeholder="UPDATE tbl_r... " />
+                <marker date="1456648432128" expanded="true" signature="4119:4241" placeholder="INSERT INTO tbl_users... " />
+                <marker date="1456648432128" expanded="true" signature="4576:4635" placeholder="INSERT INTO tbl_users_logins... " />
               </folding>
             </state>
           </provider>
@@ -78,8 +68,8 @@
       <file leaf-file-name="ControllerRecords.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/ControllerRecords.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.153846" vertical-offset="23" max-vertical-offset="867">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+            <state vertical-scroll-proportion="-2.3076923">
+              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -108,9 +98,9 @@
         <option value="$PROJECT_DIR$/controller/Controller.php" />
         <option value="$PROJECT_DIR$/controller/ControllerHome.php" />
         <option value="$PROJECT_DIR$/controller/ControllerUsers.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/controller/ControllerRecords.php" />
         <option value="$PROJECT_DIR$/db/MySql.php" />
-        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -119,12 +109,14 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="1370" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -147,6 +139,8 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="ProjectPane">
@@ -163,7 +157,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="travoca_server" />
+              <option name="myItemId" value="travoca" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -173,21 +167,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="travoca_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="travoca" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travoca_server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -207,7 +187,6 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
-    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -215,18 +194,18 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
@@ -241,7 +220,6 @@
       <envs />
       <method />
     </configuration>
-    <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -257,28 +235,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20255864" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20839694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -292,42 +270,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/MySql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1456385967726" expanded="true" signature="632:639" placeholder="SELECT tbl_r..tbl_records..." />
-            <marker date="1456385967726" expanded="true" signature="632:842" placeholder="SELECT tbl_r..tbl_records..." />
-            <marker date="1456385967726" expanded="true" signature="694:753" placeholder="select recor..tbl_users_votes..." />
-            <marker date="1456385967726" expanded="true" signature="991:1078" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="1276:1469" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2091:2178" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2095:2149" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2328:2382" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2328:2386" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2519:2577" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2700:2763" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2773:2895" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="3151:3183" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="3230:3289" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fatfree/lib/db/sql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding />
         </state>
@@ -335,7 +285,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding />
         </state>
@@ -343,15 +293,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/ControllerImage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
@@ -359,7 +308,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/ControllerRecords.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -367,44 +316,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ViewStgJson.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/MySql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="68" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
           <folding>
-            <marker date="1456385967726" expanded="true" signature="632:639" placeholder="SELECT tbl_r..tbl_records..." />
-            <marker date="1456385967726" expanded="true" signature="632:842" placeholder="SELECT tbl_r..tbl_records..." />
-            <marker date="1456385967726" expanded="true" signature="694:753" placeholder="select recor..tbl_users_votes..." />
-            <marker date="1456385967726" expanded="true" signature="991:1078" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="1276:1469" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2091:2178" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2095:2149" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2328:2382" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2328:2386" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2519:2577" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2700:2763" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2773:2895" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="3151:3183" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="3230:3289" placeholder="INSERT INTO ..." />
+            <marker date="1456648432128" expanded="true" signature="503:758" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="503:764" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="503:765" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="565:624" placeholder="select recor... tbl_users_votes" />
+            <marker date="1456648432128" expanded="true" signature="1085:1171" placeholder="INSERT INTO tbl_service_gps... " />
+            <marker date="1456648432128" expanded="true" signature="1352:1939" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="1352:1940" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="1414:1473" placeholder="select recor... tbl_users_votes" />
+            <marker date="1456648432128" expanded="true" signature="1775:1896" placeholder="SELECT COUNT... tbl_service_gps" />
+            <marker date="1456648432128" expanded="true" signature="2243:2330" placeholder="INSERT INTO tbl_locations... " />
+            <marker date="1456648432128" expanded="true" signature="2528:2737" placeholder="INSERT INTO tbl_records... " />
+            <marker date="1456648432128" expanded="true" signature="3392:3492" placeholder="INSERT INTO tbl_users_votes... " />
+            <marker date="1456648432128" expanded="true" signature="3674:3728" placeholder="UPDATE tbl_r... " />
+            <marker date="1456648432128" expanded="true" signature="3865:3923" placeholder="UPDATE tbl_r... " />
+            <marker date="1456648432128" expanded="true" signature="4119:4241" placeholder="INSERT INTO tbl_users... " />
+            <marker date="1456648432128" expanded="true" signature="4576:4635" placeholder="INSERT INTO tbl_users_logins... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/ControllerHome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding />
         </state>
@@ -412,35 +363,35 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Record.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ViewStg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ViewStgHome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding />
         </state>
@@ -448,7 +399,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/ControllerRecords.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding />
         </state>
@@ -456,44 +407,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ViewStgJson.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/MySql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
-            <marker date="1456385967726" expanded="true" signature="632:639" placeholder="SELECT tbl_r..tbl_records..." />
-            <marker date="1456385967726" expanded="true" signature="632:842" placeholder="SELECT tbl_r..tbl_records..." />
-            <marker date="1456385967726" expanded="true" signature="694:753" placeholder="select recor..tbl_users_votes..." />
-            <marker date="1456385967726" expanded="true" signature="991:1078" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="1276:1469" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2091:2178" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2095:2149" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2328:2382" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2328:2386" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2519:2577" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2700:2763" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2773:2895" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="3151:3183" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="3230:3289" placeholder="INSERT INTO ..." />
+            <marker date="1456648432128" expanded="true" signature="503:758" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="503:764" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="503:765" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="565:624" placeholder="select recor... tbl_users_votes" />
+            <marker date="1456648432128" expanded="true" signature="1085:1171" placeholder="INSERT INTO tbl_service_gps... " />
+            <marker date="1456648432128" expanded="true" signature="1352:1939" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="1352:1940" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="1414:1473" placeholder="select recor... tbl_users_votes" />
+            <marker date="1456648432128" expanded="true" signature="1775:1896" placeholder="SELECT COUNT... tbl_service_gps" />
+            <marker date="1456648432128" expanded="true" signature="2243:2330" placeholder="INSERT INTO tbl_locations... " />
+            <marker date="1456648432128" expanded="true" signature="2528:2737" placeholder="INSERT INTO tbl_records... " />
+            <marker date="1456648432128" expanded="true" signature="3392:3492" placeholder="INSERT INTO tbl_users_votes... " />
+            <marker date="1456648432128" expanded="true" signature="3674:3728" placeholder="UPDATE tbl_r... " />
+            <marker date="1456648432128" expanded="true" signature="3865:3923" placeholder="UPDATE tbl_r... " />
+            <marker date="1456648432128" expanded="true" signature="4119:4241" placeholder="INSERT INTO tbl_users... " />
+            <marker date="1456648432128" expanded="true" signature="4576:4635" placeholder="INSERT INTO tbl_users_logins... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/ControllerHome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -501,28 +454,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Record.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ViewStg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ViewStgHome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -530,7 +483,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/ControllerRecords.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding />
         </state>
@@ -538,37 +491,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/MySql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
-            <marker date="1456385967726" expanded="true" signature="632:639" placeholder="SELECT tbl_r..tbl_records..." />
-            <marker date="1456385967726" expanded="true" signature="632:842" placeholder="SELECT tbl_r..tbl_records..." />
-            <marker date="1456385967726" expanded="true" signature="694:753" placeholder="select recor..tbl_users_votes..." />
-            <marker date="1456385967726" expanded="true" signature="991:1078" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="1276:1469" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2091:2178" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2095:2149" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2328:2382" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2328:2386" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2519:2577" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2700:2763" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2773:2895" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="3151:3183" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="3230:3289" placeholder="INSERT INTO ..." />
+            <marker date="1456648432128" expanded="true" signature="503:758" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="503:764" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="503:765" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="565:624" placeholder="select recor... tbl_users_votes" />
+            <marker date="1456648432128" expanded="true" signature="1085:1171" placeholder="INSERT INTO tbl_service_gps... " />
+            <marker date="1456648432128" expanded="true" signature="1352:1939" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="1352:1940" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="1414:1473" placeholder="select recor... tbl_users_votes" />
+            <marker date="1456648432128" expanded="true" signature="1775:1896" placeholder="SELECT COUNT... tbl_service_gps" />
+            <marker date="1456648432128" expanded="true" signature="2243:2330" placeholder="INSERT INTO tbl_locations... " />
+            <marker date="1456648432128" expanded="true" signature="2528:2737" placeholder="INSERT INTO tbl_records... " />
+            <marker date="1456648432128" expanded="true" signature="3392:3492" placeholder="INSERT INTO tbl_users_votes... " />
+            <marker date="1456648432128" expanded="true" signature="3674:3728" placeholder="UPDATE tbl_r... " />
+            <marker date="1456648432128" expanded="true" signature="3865:3923" placeholder="UPDATE tbl_r... " />
+            <marker date="1456648432128" expanded="true" signature="4119:4241" placeholder="INSERT INTO tbl_users... " />
+            <marker date="1456648432128" expanded="true" signature="4576:4635" placeholder="INSERT INTO tbl_users_logins... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/ControllerHome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -576,84 +531,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Record.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ViewStg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ViewStgHome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ViewStg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Record.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ViewStgHome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/ViewStgJson.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fatfree/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fatfree/lib/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="-3.2">
           <caret line="759" column="32" selection-start-line="759" selection-start-column="26" selection-end-line="759" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fatfree/lib/f3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63978493" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.63978493">
           <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fatfree/lib/db/sql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding />
         </state>
@@ -661,7 +616,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fatfree/lib/base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="-6.5384617">
           <caret line="899" column="26" selection-start-line="899" selection-start-column="18" selection-end-line="899" selection-end-column="26" />
           <folding />
         </state>
@@ -669,23 +624,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/ControllerHome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2014218" vertical-offset="0" max-vertical-offset="844">
+        <state vertical-scroll-proportion="0.2014218">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87914693" vertical-offset="176" max-vertical-offset="1020">
+        <state vertical-scroll-proportion="0.87914693">
           <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
           <folding />
         </state>
@@ -693,72 +646,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/configs/localhost_config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17586207" vertical-offset="0" max-vertical-offset="870">
+        <state vertical-scroll-proportion="0.17586207">
           <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/ControllerImage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4028436" vertical-offset="0" max-vertical-offset="844">
+        <state vertical-scroll-proportion="0.4028436">
           <caret line="20" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configs/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1954023" vertical-offset="0" max-vertical-offset="870">
+        <state vertical-scroll-proportion="0.1954023">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/ControllerUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="816">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/MySql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="153" max-vertical-offset="1615">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <marker date="1456385967726" expanded="true" signature="632:639" placeholder="SELECT tbl_r..tbl_records..." />
-            <marker date="1456385967726" expanded="true" signature="632:842" placeholder="SELECT tbl_r..tbl_records..." />
-            <marker date="1456385967726" expanded="true" signature="694:753" placeholder="select recor..tbl_users_votes..." />
-            <marker date="1456385967726" expanded="true" signature="991:1078" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="1276:1469" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2091:2178" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2095:2149" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2328:2382" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2328:2386" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2519:2577" placeholder="UPDATE tbl_r..." />
-            <marker date="1456385967726" expanded="true" signature="2700:2763" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="2773:2895" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="3151:3183" placeholder="INSERT INTO ..." />
-            <marker date="1456385967726" expanded="true" signature="3230:3289" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ControllerRecords.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.153846" vertical-offset="23" max-vertical-offset="867">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3658243" vertical-offset="172" max-vertical-offset="1309">
+        <state vertical-scroll-proportion="0.0">
           <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3461537">
+          <caret line="366" column="9" selection-start-line="366" selection-start-column="9" selection-end-line="366" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/ControllerRecords.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3076923">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/MySql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68248177">
+          <caret line="40" column="98" selection-start-line="40" selection-start-column="98" selection-end-line="40" selection-end-column="98" />
+          <folding>
+            <marker date="1456648432128" expanded="true" signature="503:758" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="503:764" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="503:765" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="565:624" placeholder="select recor... tbl_users_votes" />
+            <marker date="1456648432128" expanded="true" signature="1085:1171" placeholder="INSERT INTO tbl_service_gps... " />
+            <marker date="1456648432128" expanded="true" signature="1352:1939" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="1352:1940" placeholder="SELECT tbl_r... tbl_records" />
+            <marker date="1456648432128" expanded="true" signature="1414:1473" placeholder="select recor... tbl_users_votes" />
+            <marker date="1456648432128" expanded="true" signature="1775:1896" placeholder="SELECT COUNT... tbl_service_gps" />
+            <marker date="1456648432128" expanded="true" signature="2243:2330" placeholder="INSERT INTO tbl_locations... " />
+            <marker date="1456648432128" expanded="true" signature="2528:2737" placeholder="INSERT INTO tbl_records... " />
+            <marker date="1456648432128" expanded="true" signature="3392:3492" placeholder="INSERT INTO tbl_users_votes... " />
+            <marker date="1456648432128" expanded="true" signature="3674:3728" placeholder="UPDATE tbl_r... " />
+            <marker date="1456648432128" expanded="true" signature="3865:3923" placeholder="UPDATE tbl_r... " />
+            <marker date="1456648432128" expanded="true" signature="4119:4241" placeholder="INSERT INTO tbl_users... " />
+            <marker date="1456648432128" expanded="true" signature="4576:4635" placeholder="INSERT INTO tbl_users_logins... " />
+          </folding>
         </state>
       </provider>
     </entry>
