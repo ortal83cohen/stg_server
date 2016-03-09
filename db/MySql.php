@@ -21,7 +21,7 @@ class MySql extends F3instance
 
     public function getRecords($request)
     {
-        return $this->db->exec('SELECT tbl_records.*,tbl_locations.*,(tbl_records.id not in ((select recordId from tbl_users_votes WHERE userId = :userId))) as canVote FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id LEFT JOIN tbl_users ON userId = tbl_users.id LIMIT ' . $request["limit"], array(":userId" => $request["userId"]));
+        return $this->db->exec('SELECT tbl_records.*,tbl_locations.*,(tbl_records.id not in ((select recordId from tbl_users_votes WHERE userId = :userId))) as canVote FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id LEFT JOIN tbl_users ON userId = tbl_users.id LIMIT ' .$request["offset"].",". $request["limit"], array(":userId" => $request["userId"]));
     }
 
     public function getUserRecords($request)
