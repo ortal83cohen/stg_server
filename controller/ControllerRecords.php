@@ -23,14 +23,14 @@ class ControllerRecords extends Controller
     {
 
         if (!isset($this->request['type'])){
-            $this->data = $this->sql->getUserRecords($this->request);
+            $this->data = array("records" =>$this->sql->getUserRecords($this->request));
         }else {
             switch ($this->request['type']) {
                 case "service_gps_viewport":
-                    $this->data = $this->sql->getServiceGpsViewportRecords($this->request);
+                    $this->data = array("records" => $this->sql->getServiceGpsViewportRecords($this->request));
                     break;
                 default:
-                    $this->data = $this->sql->getRecords($this->request);
+                    $this->data = array("records" => $this->sql->getRecords($this->request));
                     break;
             }
         }
@@ -42,10 +42,11 @@ class ControllerRecords extends Controller
         $id = $this->sql->setRecords($this->request);
         $title = str_replace(' ', '', $this->request["title"] . $id);
 
-        $decodedImage = base64_decode($this->request["image"]);
-        $decodedRecord = base64_decode($this->request["record"]);
-        file_put_contents($this->get("IMAGE_LIBRARY") . $title . $this->get("IMAGE_TYPE"), $decodedImage);
-        file_put_contents($this->get("RECORD_LIBRARY") . $title . $this->get("RECORD_TYPE"), $decodedRecord);
+		$this->data = array("rowId"=>$title);
+        //$decodedImage = base64_decode($this->request["image"]);
+        //$decodedRecord = base64_decode($this->request["record"]);
+        //file_put_contents($this->get("IMAGE_LIBRARY") . $title . $this->get("IMAGE_TYPE"), $decodedImage);
+        //file_put_contents($this->get("RECORD_LIBRARY") . $title . $this->get("RECORD_TYPE"), $decodedRecord);
 
     }
 

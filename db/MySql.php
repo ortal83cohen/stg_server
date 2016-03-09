@@ -56,8 +56,8 @@ class MySql extends F3instance
         $id = $this->db->lastInsertId();
         $this->db->exec("INSERT INTO tbl_records ( locationId, lang, title, description, imageUrl, likes, unLikes, recordUrl,userId) VALUES
 	( :locationId, :lang, :title, :description, :imageUrl, :likes, :unLikes, :recordUrl, :userId);", array(":locationId" => $id, ":lang" => "en", ":title" => $request["title"]
-        , ":description" => $request["description"], ":imageUrl" => str_replace(' ', '', $this->get("DOMAIN") . $this->get("IMAGE_LIBRARY") . $request["title"] . $id . $this->get("IMAGE_TYPE")), ":likes" => 0, ":unLikes" => 0
-        , ":recordUrl" => str_replace(' ', '', $this->get("DOMAIN") . $this->get("RECORD_LIBRARY") . $request["title"] . $id . $this->get("RECORD_TYPE")), ":userId" => $request["userId"]));
+        , ":description" => $request["description"], ":imageUrl" => str_replace(' ', '',  $this->get("IMAGE_LIBRARY") . $request["title"] . $id . $this->get("IMAGE_TYPE")), ":likes" => 0, ":unLikes" => 0
+        , ":recordUrl" => str_replace(' ', '',  $this->get("RECORD_LIBRARY") . $request["title"] . $id . $this->get("RECORD_TYPE")), ":userId" => $request["userId"]));
         $this->db->commit();
         return $id;
     }
