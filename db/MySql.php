@@ -60,7 +60,7 @@ class MySql extends F3instance
 
         return $this->db->exec('SELECT tbl_records.*,tbl_locations.*
                                 FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id
-                                WHERE date > :last_time'
+                                WHERE date > :last_time LIMIT ' . $request["limit"]
                              , array(":last_time"=>$location[1]));
            
     }
