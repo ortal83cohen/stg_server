@@ -29,6 +29,9 @@ class ControllerRecords extends Controller
                 case "service_gps_viewport":
                     $this->data = array("records" => $this->sql->getServiceGpsViewportRecords($this->request));
                     break;
+				case "service_gps_spr":
+                    $this->data = array("records" => $this->sql->getServiceGpsSprRecords($this->request));
+                    break;
                 default:
                     $this->data = array("records" => $this->sql->getRecords($this->request));
                     break;

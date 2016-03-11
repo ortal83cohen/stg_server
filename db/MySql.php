@@ -16,7 +16,7 @@ class MySql extends F3instance
     public function __construct()
     {
         $host = $this->get("MYSQL_HOST");
-        $this->db = new \DB\SQL("mysql:host=$host;port=3306;dbname=stg", 'ortal83cohen', "1Q1q1q1q");
+        $this->db = new \DB\SQL("mysql:host=$host;port=3306;dbname=travoca", 'travoca', "1q1q1q1q");
     }
 
     public function getRecords($request)
@@ -46,6 +46,23 @@ class MySql extends F3instance
                                 AND (SELECT COUNT(*) FROM tbl_service_gps WHERE userid=:userId and lat>:minlat and lat<:maxlat and lon>:minlon and lon<:maxlon) <2
                                  LIMIT ' . $request["limit"],
             array(":userId" => $request["userId"], ":minlat" => $minLocation[0], ":maxlat" => $maxLocation[0], ":minlon" => $minLocation[1], ":maxlon" => $maxLocation[1]));
+    }
+	
+	public function getServiceGpsSprRecords($request)
+    {
+        $location = explode(";", $request["context"]);
+        $latlom = explode(",", $location[0]);
+        $location[1] = ($location[1] == "null")? "0":$location[1];
+
+        $this->db->exec("INSERT INTO tbl_service_gps ( userId, lat,lon,last_time) VALUES
+            (:userId, :lat,:lon,:last_time);", array(":userId" => $request["userId"], ":lat" => $latlom[0], ":lon" => $latlom[1],":last_time"=>$location[1]));
+
+
+        return $this->db->exec('SELECT tbl_records.*,tbl_locations.*
+                                FROM tbl_records INNER JOIN tbl_locations ON locationId = tbl_locations.id
+                                WHERE date > :last_time'
+                             , array(":last_time"=>$location[1]));
+           
     }
 
     public function setRecords($request)
